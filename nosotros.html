@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8" /> 
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Optimus Mayorista</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="estilos/styles.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="estilos/estilos.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
     </head>
 
-    <body>
-
-        <header>
-            <nav>
-                
+    <body class="body">
+        <header>                              
                 <div class="cabecera">
-                    <img src="imagenes/logo.jpg" alt="Optimus" width="150" >
+                    <a href="#"> <img src="imagenes/logo.jpg" alt="Optimus" width="150" class="logo" /> </a>
 
                     <div class="inicio">   
-                        <input type="search" />
-                        <button>Buscar</button>
                         <a href="inicio-sesion.html" class="sesion">Iniciar sesión</a>
-                        <button>Mi carrito</button>
+                        <button class="btn btn-outline-dark">Mi carrito</button>
                     </div> 
-                </div> 
 
-                <div>
-                    <ul class="menu">                
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="indumentaria.html">Indumentaria</a></li>
-                        <li><a href="lenceria.html">Lencería</a></li>
-                        <li><a href="blanqueria.html">Blanquería</a></li>
-                        <li><a href="accesorios.html">Accesorios</a></li>
-                        <li><a href="tecnologia.html">Tecnología</a></li>                
-                    </ul>
+                    
                 </div>
 
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Optimus</a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse" id="navbarColor01">
+                        <ul  class="menu">   
+
+                            <li class="nav-item">
+                                <a href="index.html">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="indumentaria.html">Indumentaria</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="lenceria.html">Lenceria</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="blanqueria.html">Blanquería</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="accesorios.html">Accesorios</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="tecnologia.html">Tecnología</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Buscar</button>
+                          </form>
+                    </div>
+                </div>
             </nav>          
-        </header> 
+        </header>        
 
         <section class="contenido-flex">
 
